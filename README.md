@@ -1,12 +1,12 @@
-# 🎮 C# Game Collection
+# 🎮 C# Game Collection — Windows Forms Edition
 
-A console-based project developed in **C#**, featuring three interactive mini-games:
+A desktop application developed in **C# using Windows Forms**, featuring three interactive games:
 - 🎱 **Bingo**
 - 🎰 **Casino Roulette**
 - 💰 **Who Wants to Be a Millionaire**
 
-Each game is designed to demonstrate programming logic, randomness, user interaction, and basic control structures in C#.  
-The program provides a simple and entertaining way to explore fundamental programming concepts while simulating real-life games.
+The project combines game logic, graphical interface design, and event-driven programming.  
+It provides a fun and educational way to explore **C#**, **Windows Forms**, and **object-oriented programming** concepts.
 
 ---
 
@@ -14,91 +14,94 @@ The program provides a simple and entertaining way to explore fundamental progra
 
 ### 🎱 Bingo
 - Random number generation between 1–75  
-- Dynamic card creation  
-- Displays drawn numbers and player matches  
-- Detects when the player completes a line or full card (Bingo!)
+- Dynamic card generation with randomized layouts  
+- Real-time display of drawn numbers  
+- Automatic detection of completed rows or full Bingo  
 
 ### 🎰 Casino Roulette
-- Simulates a real roulette wheel  
-- Player chooses a bet type:
-  - Color (Red/Black)
-  - Number
-  - Even/Odd
-- Random spin with automatic win/loss calculation
+- Simulates a classic roulette table  
+- Player bets on:
+  - Color (Red/Black)  
+  - Number  
+  - Even/Odd  
+- Automatic win/loss calculation  
 
 ### 💰 Who Wants to Be a Millionaire
 - Multiple-choice trivia game  
-- Progressive prize levels  
-- Instant feedback for each answer  
-- Simulates lifelines such as *50/50* or *Skip Question* (optional)  
+- Increasing prize tiers  
+- Visual interface with buttons for each question  
+- Optional lifelines such as *50/50* or *Skip Question*  
 
 ---
 
 ## 🧩 Project Structure
 
 csharp-game-collection/
-├── Program.cs # Main menu and navigation
-├── Bingo.cs # Bingo logic
-├── Roulette.cs # Casino roulette logic
-├── Millionaire.cs # Quiz game logic
-├── bin/ # Compiled binaries
+├── BingoForm.cs # Bingo interface and logic
+├── RouletteForm.cs # Casino Roulette interface and logic
+├── MillionaireForm.cs # Quiz game interface and logic
+├── MainMenuForm.cs # Main navigation menu
+├── Program.cs # Entry point
+├── Properties/ # App configuration and resources
+├── Resources/ # Images, sounds, and icons
+├── bin/ # Compiled files
 ├── obj/ # Build artifacts
 └── README.md
 
 
 ---
 
-## ⚙️ Technologies Used
+## 🛠️ Technologies Used
 
 | Technology | Description |
 |-------------|-------------|
 | **C# (.NET 6 or later)** | Core programming language |
-| **System.Random** | Used for random number generation |
-| **Console Application** | Text-based interface |
-| **Object-Oriented Design** | Each game built as a separate class |
+| **Windows Forms** | Graphical user interface framework |
+| **System.Random** | Random number generation for game logic |
+| **OOP (Object-Oriented Programming)** | Modular design — one class/form per game |
 
 ---
 
 ## 🚀 How to Run
 
 1. **Prerequisites**
-   - .NET SDK **6.0** or higher installed  
-   - A code editor such as **Visual Studio** or **Visual Studio Code**
+   - Install **Visual Studio 2022** or newer  
+   - Ensure the **.NET Desktop Development** workload is installed  
 
 2. **Clone the repository**
    ```bash
    git clone https://github.com/your-username/csharp-game-collection.git
    cd csharp-game-collection
 
+    Open the project
+
+        Open the .sln file in Visual Studio
+
     Run the application
 
-    dotnet run
-
-🧠 Example Output
-
-=============================
-🎮 C# Game Collection
-=============================
-1. Bingo
-2. Casino Roulette
-3. Who Wants to Be a Millionaire
-4. Exit
-=============================
-Choose a game: 2
-🎰 Spinning the wheel...
-Result: 17 (Red)
-You bet on Black. You lose!
+        Press F5 or click Start to build and run the program
 
 🧭 Project Goal
 
-This project was developed to demonstrate:
+The purpose of this project is to demonstrate:
 
-    Control structures and loops
+    Use of Windows Forms for GUI applications
 
-    Randomization and probability logic
+    Application of C# logic in an interactive environment
 
-    Modular code organization using C# classes
+    Modular design and event-driven programming
 
-    User interaction via the console
+    Integration of randomness and probability in games
 
-It serves as both a learning project and a fun demonstration of logic-based game design.
+It serves as both a learning tool and a fun example of desktop game development.
+🔮 Future Improvements
+
+    Add score tracking across sessions
+
+    Include sound effects and background music
+
+    Add difficulty levels for each game
+
+    Improve layout with responsive design
+
+    Create a leaderboard using local file storage
