@@ -70,7 +70,7 @@ csharp-game-collection/
 
 2. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/csharp-game-collection.git
+   git clone https://github.com/lucas-morim/csharp-game-collection.git
    cd csharp-game-collection
 
     Open the project
